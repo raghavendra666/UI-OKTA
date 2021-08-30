@@ -47,7 +47,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Header as="h1">PKCE Flow w/ Custom Login</Header>
+        <Header as="h1">Envestnet LOgin</Header>
 
         { authState.isAuthenticated && !userInfo
         && <div>Loading user information...</div>}
@@ -89,14 +89,7 @@ const Home = () => {
         <div>
           <p>If you&lsquo;re viewing this page then you have successfully started this React application.</p>
           <p>
-            <span>This example shows you how to use the </span>
-            <a href="https://github.com/okta/okta-react/tree/master">Okta React Library</a>
-            <span> to add the </span>
-            <a href="https://developer.okta.com/docs/guides/implement-auth-code-pkce">PKCE Flow</a>
-            <span> to your application.</span>
-          </p>
-          <p>
-            When you click the login button below, you will be presented the login page on the Okta Sign-In Widget hosted within the application.
+            When you click the login button below, you will be presented the login page on the Envestnet Okta Sign-In Widget hosted within the application.
             After you authenticate, you will be logged in to this application with an ID token and access token. These tokens will be stored in local storage and can be retrieved at a later time.
           </p>
           <Button id="login-button" primary onClick={login}>Login</Button>
