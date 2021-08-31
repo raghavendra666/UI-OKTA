@@ -1,7 +1,7 @@
-const CLIENT_ID = '0oa1mclw7jf93e28H5d7';
-const ISSUER = 'https://dev-35680088.okta.com';
+const CLIENT_ID = '0oazftbwct4xFZzSi1d6';
+const ISSUER = 'https://ext-envestnet.oktapreview.com';
 const OKTA_TESTING_DISABLEHTTPSCHECK = process.env.OKTA_TESTING_DISABLEHTTPSCHECK || false;
-const REDIRECT_URI = 'http://localhost:8080/login/callback';
+const REDIRECT_URI = 'http://localhost:8080/authorization-code/callback';
 export default {
   oidc: {
     clientId: CLIENT_ID,

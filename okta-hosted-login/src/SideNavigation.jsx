@@ -19,6 +19,7 @@ const SideNavigation = () => {
   const styles = {
     sideBarHeight: {
       height: '100vh',
+      background: 'red !important',
     },
     menuIcon: {
       float: 'right',
@@ -29,8 +30,8 @@ const SideNavigation = () => {
     setCollapsed(!collapsed);
   };
   return (
-    <div id="header" style={{ marginLeft: '-20.5em', marginTop: '-4.3em' }}>
-      <ProSidebar style={styles.sideBarHeight} collapsed={collapsed}>
+    <div id="header" style={{ marginLeft: '-20.5em', marginTop: '-3.5em', width: '260px' }}>
+      <ProSidebar style={styles.sideBarHeight} collapsed={collapsed} className="proSidebar">
         <SidebarHeader>
           <div style={styles.menuIcon} onClick={onClickMenuIcon}>
             <AiOutlineMenu />

@@ -6,7 +6,9 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.proSidebar{
+background-color: 'red' !important;
+}
 .App-header {
   background-color: #222;
   height: 150px;

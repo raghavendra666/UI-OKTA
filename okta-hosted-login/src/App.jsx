@@ -27,7 +27,7 @@ const App = () => {
       <Container text style={{ marginTop: '7em', width: '100%' }}>
         <div>
           <div style={{ width: '50%', position: 'absolute' }}>
-            <SideNavigation style={{ marginTop: '-3em' }} />
+            <SideNavigation style={{ marginTop: '-3.3em' }} />
           </div>
           <div style={{ width: '50%', position: 'absolute' }}>
             <Switch>
