@@ -1,7 +1,6 @@
 import { useOktaAuth } from '@okta/okta-react';
 import React, { useState, useEffect } from 'react';
 import { Header, Icon, Message, Table } from 'semantic-ui-react';
-import SideNavigation from './SideNavigation';
 import config from './config';
 
 const Messages = () => {
@@ -59,7 +58,6 @@ const Messages = () => {
         <Icon name="mail outline" />
         My Messages
       </Header>
-      <SideNavigation />
       {messageFetchFailed && <Message error header="Failed to fetch messages.  Please verify the following:" list={possibleErrors} />}
       {!messages && !messageFetchFailed && <p>Fetching Messages..</p>}
       {messages

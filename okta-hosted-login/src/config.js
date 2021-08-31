@@ -1,5 +1,5 @@
-const CLIENT_ID = '0oav3h0r5UeU2nbNi5d6';
-const ISSUER = 'https://envestnet-poc.okta.com';
+const CLIENT_ID = '0oa1mclw7jf93e28H5d7';
+const ISSUER = 'https://dev-35680088.okta.com';
 const OKTA_TESTING_DISABLEHTTPSCHECK = process.env.OKTA_TESTING_DISABLEHTTPSCHECK || false;
 const REDIRECT_URI = 'http://localhost:8080/login/callback';
 export default {

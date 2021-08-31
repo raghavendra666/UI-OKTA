@@ -28,7 +28,7 @@ const Navbar = ({ setCorsErrorModalOpen }) => {
       <Menu fixed="top" inverted>
         <Container>
           <Menu.Item header>
-            <Image size="mini" src="/react.png" />
+            <Image size="mini" src="react.png" />
             &nbsp;
             <Link to="/">Envestnet Admin Portal</Link>
           </Menu.Item>

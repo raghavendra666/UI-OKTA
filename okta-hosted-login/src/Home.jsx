@@ -48,7 +48,6 @@ const Home = () => {
     <div>
       <div>
         <Header as="h1">PKCE Flow w/ Custom Login</Header>
-
         { authState.isAuthenticated && !userInfo
         && <div>Loading user information...</div>}
 

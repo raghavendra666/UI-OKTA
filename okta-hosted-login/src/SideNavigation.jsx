@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaGem, FaHeart } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 import {
   Menu,
   MenuItem,
@@ -28,29 +29,35 @@ const SideNavigation = () => {
     setCollapsed(!collapsed);
   };
   return (
-    <ProSidebar style={styles.sideBarHeight} collapsed={collapsed}>
-      <SidebarHeader>
-        <div style={styles.menuIcon} onClick={onClickMenuIcon}>
-          <AiOutlineMenu />
-        </div>
-      </SidebarHeader>
-      <Menu iconShape="square">
-        <MenuItem icon={<FaGem />}> Dashboard</MenuItem>
-        <MenuItem icon={<FaGem />}>Users</MenuItem>
-        <SubMenu title="Firms" icon={<FaHeart />}>
-          <MenuItem>Track Report</MenuItem>
-          <MenuItem>Inventory Report</MenuItem>
-          <MenuItem>Customer Report</MenuItem>
-        </SubMenu>
-        <SubMenu title="Platforms" icon={<FaHeart />}>
-          <MenuItem>Permissions</MenuItem>
-          <MenuItem>Settings</MenuItem>
-        </SubMenu>
-        <SubMenu title="Reports" icon={<FaHeart />}>
-          <MenuItem>Notification</MenuItem>
-        </SubMenu>
-      </Menu>
-    </ProSidebar>
+    <div id="header" style={{ marginLeft: '-20.5em', marginTop: '-4.3em' }}>
+      <ProSidebar style={styles.sideBarHeight} collapsed={collapsed}>
+        <SidebarHeader>
+          <div style={styles.menuIcon} onClick={onClickMenuIcon}>
+            <AiOutlineMenu />
+          </div>
+        </SidebarHeader>
+        <Menu iconShape="square">
+          <MenuItem icon={<FaGem />}>
+            <NavLink exact to="/dashboard">
+              Dashboard
+            </NavLink>
+          </MenuItem>
+          <MenuItem icon={<FaGem />}>Users</MenuItem>
+          <SubMenu title="Firms" icon={<FaHeart />}>
+            <MenuItem>Track Report</MenuItem>
+            <MenuItem>Inventory Report</MenuItem>
+            <MenuItem>Customer Report</MenuItem>
+          </SubMenu>
+          <SubMenu title="Platforms" icon={<FaHeart />}>
+            <MenuItem>Permissions</MenuItem>
+            <MenuItem>Settings</MenuItem>
+          </SubMenu>
+          <SubMenu title="Reports" icon={<FaHeart />}>
+            <MenuItem>Notification</MenuItem>
+          </SubMenu>
+        </Menu>
+      </ProSidebar>
+    </div>
   );
 };
 
